@@ -1,0 +1,18 @@
+html, body {
+    height: 100%;
+    width:100%;
+    
+}
+
+.header {
+    display:flex;
+    background-color: peachpuff;
+    color: black;
+    margin:0%;
+    padding:0%;
+    border: 1px;
+    border-color: peachpuff;
+    position: relative;
+
+}
+
