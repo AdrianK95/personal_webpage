@@ -6,24 +6,103 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link href="css/gallery_template.css" rel="stylesheet">
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 
+    <script src="js/gallery.js"></script>
     <title>Gallery</title>
   
+       <!-- Bootstrap core CSS -->
+     <link href="css/bootstrap.css" rel="stylesheet">
+     <link href="css/stylish-portfolio.css" rel="stylesheet">
+     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
   </head>
 <body>
-  <div class="top">
-  <h1><center><u>Gallery</u></center></h1>
-</div>
-    <div class="grid-container">
-        <img class="grid-item" src="img/gallery/fanispan.jpg"></img>
-        <img class="grid-item" src="img/gallery/HalongBay.jpg"></img>
-        <img class="grid-item" src="img/gallery/hochimin.jpg"></img>
-        <img class="grid-item" src="img/gallery/RedBridge.jpg"></img>
-        <img class="grid-item" src="img/gallery/tanbin.jpg" ></img>
-        <img class="grid-item" src="img/gallery/starfishbeach.jpg"></img>
-        <div class="grid-item" src="img/gallery/hanoiuni.jpg"></div>
-        <div class="grid-item" src="img/gallery/DSC01893.jpg"></div>
-        <div class="grid-item" src="img/gallery/DSC01652.jpg"></div>
-      </div>
-</body>
+
+    <!-- Side Menu -->
+    <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <div id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+        <li class="sidebar-brand"><a href="http://startbootstrap.com"></a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <!-- /Side Menu -->
+
+
+ 
+
+  <div class="grid">
+    <div class="grid-sizer"></div>
+    <div class="grid-item">
+      <img src="img/gallery/HalongBay.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="img/gallery/fanispan.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="img/gallery/hanoiuni.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="img/gallery/tanbin.jpg" />
+      <img src="img/gallery/DSC01652.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="img/gallery/hochimin.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="img/gallery/RedBridge.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="img/gallery/lily_hochi.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="img/gallery/starfishbeach.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="" />
+    </div>
+  </div>
+ 
+
+  <script src="js/jquery-1.10.2.js"></script>
+  <script src="js/bootstrap.js"></script>
+    <!-- Custom JavaScript for the Side Menu and Smooth Scrolling -->
+    <script>
+        $("#menu-close").click(function(e) {
+            e.preventDefault();
+            $("#sidebar-wrapper").toggleClass("active");
+        });
+    </script>
+    <script>
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#sidebar-wrapper").toggleClass("active");
+        });
+    </script>
+    <script>
+      $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+            || location.hostname == this.hostname) {
+
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+    </script>
+
+</body> 
 </html>
