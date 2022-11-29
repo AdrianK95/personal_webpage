@@ -12,12 +12,80 @@
 
     <!-- Add custom CSS here -->
     <link href="blogscss/blogsGeneric.css" rel="stylesheet">
-    
+    <link href="../css/bootstrap.css" rel="stylesheet">
+     <link href="../css/stylish-portfolio.css" rel="stylesheet">
+     <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
   </head>
 
+<body>
+
+   <!-- Side Menu -->
+   <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><i class="fa fa-bars"></i></a>
+   <div id="sidebar-wrapper">
+     <ul class="sidebar-nav">
+       <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+       <li class="sidebar-brand"><a href="http://startbootstrap.com"></a></li>
+       <li><a href="index.html">Home</a></li>
+       <li><a href="#about">About</a></li>
+       <li><a href="#services">Services</a></li>
+       <li><a href="#portfolio">Portfolio</a></li>
+       <li><a href="#contact">Contact</a></li>
+     </ul>
+   </div>
+   <!-- /Side Menu -->
 
   <!--header -->
-  <div id="top" class="header">
+  <div id="top" class="top">
       <h1>Blogs</h1>
     </div>
   </div>
+
+  <div id="title">
+    <h1>Current Articles </h1>
+  </div>
+
+  <div id="postList">
+    <ul><h3 style="margin-top:12px">
+      <a class="post-link" href="./2022/08/25/going_serverless.html">Going From Teaching to Software Engineering</a></h3>
+      <h3 passing=12px><a class="post-link" href="/blogs/2022/08/24/Graph.html">Going Serverless</a></h3>
+    </ul>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/jquery-1.10.2.js"></script>
+  <script src="js/bootstrap.js"></script>
+
+  <!-- Custom JavaScript for the Side Menu and Smooth Scrolling -->
+  <script>
+      $("#menu-close").click(function(e) {
+          e.preventDefault();
+          $("#sidebar-wrapper").toggleClass("active");
+      });
+  </script>
+  <script>
+      $("#menu-toggle").click(function(e) {
+          e.preventDefault();
+          $("#sidebar-wrapper").toggleClass("active");
+      });
+  </script>
+  <script>
+    $(function() {
+      $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+          || location.hostname == this.hostname) {
+
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
+  </script>
+
+</body>
