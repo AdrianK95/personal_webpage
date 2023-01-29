@@ -33,6 +33,13 @@ body{
 
 }
 
+.blog-container .blog-img{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
 .blog-heading{
     display: flex;
     justify-content: center;
@@ -41,9 +48,18 @@ body{
     font-size: 50px;
 }
 
+
+
 .blog-heading span {
     color: black;
     
+}
+
+.blog-redirect{
+    display: flex;
+    justify-content: right;
+    padding-left: 75%;
+    font-size: 15px;
 }
 
 .blog-information{
@@ -61,8 +77,8 @@ body{
 }
 
 .blog-information h3{
+    margin-top: 10px;
     margin-bottom: 20px;
-    
     padding-left: 25%;
     padding-right: 25%;
     text-decoration: underline;
@@ -70,9 +86,8 @@ body{
 }
 
 .blog-information h4{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    
+    margin-top: 0px;
+    margin-bottom: 5px;
     padding-left: 25%;
     padding-right: 25%;
     
@@ -81,11 +96,11 @@ body{
 
 .blog-information ul li{
     display: list-item;
-    list-style-type: circle;
+    list-style-type:disc;
     list-style-position: inside;
     
-    padding-left: 25%;
-    padding-right: 25%;
+    padding-left: 10px;
+    padding-right: 5px;
    
 }
 
@@ -114,9 +129,41 @@ body{
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin: 20px 0px;
-    padding: 30px;
-    display: flex;
+    margin: 0px 0px;
+    padding: 0px;
+    display: inline-block;
     flex-direction: column;
+}
+
+.pros-cons{
+    padding-left: 25%;
+    padding-right: 25%;
+    display: flex;
+    
+    
+    
+}
+.pros-cons .benefits-heading{
+    background: #9b9b9b;
+    color: #ffffff;
+}
+
+.pros-cons .cons-heading {
+    background: #9b9b9b;
+    color: #ffffff;
+}
+
+.pros-cons .blog-information.cons {
+    background: #ababab;
+}
+
+.pros-cons .benefits-container,
+.pros-cons .cons-container {
+    
+    text-align: left;
+    float: left;
+    flex:50%;
+    border:#9b9b9b solid .5px;
+
     
 }

@@ -23,26 +23,33 @@
   <!---Blog Section-->
   <section id="blog">
     <!---heading-->
+    <div class="blog-redirect">
+          <span><a href=../../../blogs.html>Return to blogs</a></span>
+        </div>
     <div class="blog-heading">
       <span>Going Serverless</span>
-      </div>
+        
+    </div>
     <div class="blog-date">
     <span>25th August 2022</span>
+    
     </div>
       <!------Blog container----->
       <div class="blog-container">
-    
+        
+        <div class="blog-img">
+          <img src="../../../../img/serverless_header.img"> 
+        </div>
 
         <!----Blog Information-->
       <div class= "blog-information">
       <p>
-      This is the future. Or maybe the present. 
+      This is the future. Or maybe the <i>present</i>. 
       </p>
       
       <p> 
       At the moment servers still remain the industry standard. I can completely understand why you would choose to use your own in-house server rather than outsourcing it to the cloud. 
-      The likes of security and data protection is clearly a winner on this front. It’s secured with on premise systems and there is no third party intermediary getting involved. This should not deter you from considering moving to serverless.  One of the biggest benefits is that you don’t need internet connection. 
-      Some of the drawbacks include the need for very skilled staff ready to maintain the hardware. 
+      The likes of security and data protection is clearly a winner on this front. It’s secured with on premise systems and there is no third party intermediary getting involved. This should not deter you from considering moving to serverless.  
       </p>
       
       <p>
@@ -51,44 +58,81 @@
       This lets companies focus on developing their product and us (developers) focus on writing code (woohoo!) 
       </p>
       
-      
+      <!-------Why should you use serverless---->
       <h3>Why is Serverless good for me as a developer</h3>
       
       <p>
       Do you at the moment know how to maintain a server? 
       If yes, then you're lying. 
       If no, then you're probably like me and you already have a tonne of things to learn. So why add another thing like learning how to maintain your servers onto that massive to do list. 
-      You can outsource all this pain to the likes of AWS in simple steps. Some examples would be:
+      You can outsource all this pain to the likes of AWS in simple steps. There is plenty of applications of using a serverless design. Some examples that follow these practice could include:
       <ul id="serverless">
-        <li>If you want to create web applications you can use the likes of AWS Lambda and AWS Amplify</li>
-        <img src="../../../../img/web_application.jpeg"><img>
-        <li>If you want to do large scale data processing you can use the likes of AWS Glue for a fully managed ETL process</li>
-        <img src="../../../../img/data_engineering.jpeh/data_engineering.jpeg.001.jpeg">
+        <p>For developing web applications you can use the likes of AWS Lambda and AWS Amplify</p>
+        <img src="../../../../img/web_application.jpeg" alt="Web Application Example"><img>
+        <p>Performaing large scale data processing you can use the likes of AWS Glue for a fully managed ETL process</p>
+        <img src="../../../../img/data_engineering.jpeh/data_engineering.jpeg.001.jpeg" alt="Data Engineering Example">
       </ul>
-    </p>
-
+    
+      <!--------Pros and Cons-->
       
       <h3><u>What are the Benefits and cost of serverless vs servers in computing </u></h3>
-      </p>
-      <h4>Benefits</h4>
-      <ul>
-        <li>Really easy to scale</li>
-        <li>No management of servers</li>
-        <li>pay as you go</li>
-      </ul>
-      <h4>Costs</h4>
-      <ul>
-        <li>The Learning curve is steep</li>
-        <li>There is a timeout, so long running process are not suitable</li>
-      </ul>
+      <div class="pros-cons">
+        
+        <div class="benefits-container">
+          <h4 class="benefits-heading">Benefits</h4>
+            <ul class="benefits">
+              <li>Really easy to scale</li>
+              <li>No management of servers</li>
+              <li>pay as you go</li>
+            </ul>
+        </div>
+
+        <div class="cons-container">
+          <h4 class="cons-heading">Costs</h4>
+              <ul class="cons">
+                <li>Security - a vendor is running your code and processing your data</li>
+                <li>There is a timeout, so long running process are not suitable</li>
+                <li>A Steep learning curve</li>
+              </ul>
+        </div>
+      </div>
       
+      <!---------How to get started-->
+      <h3>How do I get Started</h3>
       <p>
-      Should you move to serverless so? Not always! This is always a loaded question and depends a lot on your circumstances. If your company already has an in-house team with servers, then it would probably cost your team more to remove this set up and move to serverless. On the other hand if you’re a small startup with only a few members in your it and no servers then it would seem like a no-brainer to move to the cloud. 
+        As you can probably tell now i've been sucked into the amazon marketing machine and spend a lot of
+        my time there now. Therefore in my opinion AWS and serverless is some of the best places to start. Outside of the concept of serverless
+        there is a framework called <b>the serverless framework</b>. This can be easily used to deploy and manage your serverless applications.
+      </p>
 
 
 
-      Is a database the same as a server</p>
-          <div class="serverless-info-box1">
+      <!-----Serverless Framework-->
+      <h4> Serverless Framework</h4>
+      <p>
+        As you can see in the serverless banner above this framework is quite mature and you can find a lot of
+        information about it here on the <a href=https://www.serverless.com>serverless webpage</a>
+        Essentially the serverless framework allows you to deploy infrastructure and code at the same time. I will be doing a separate post about the serverless framework
+        another time which I will link here.
+      </p>
+
+
+      <!------Conclusions-->
+      <h3>In Conclusion</h3>
+      <p>
+        Serverless is undeniably powerful and provides an essential service for a certain demographic of the market. For a lot of startups in the technology space without serverless their ideas would be rendered nearly impossible. 
+
+      </p><p>
+      Should you move to serverless so? Not always! This is always a loaded question and depends a lot on your circumstances.
+      What sort of traffic are you expecting and how much computer power do you need will play a factor into whether serverless is the right choice for you. 
+      If your company already has an in-house team with servers, then it would probably cost your team more to remove this set up and move to serverless. On the other hand if you’re a small startup and with only a few members in your team and no servers then it would seem like a no-brainer to move to serverless. 
+      </p>
+
+    <p>
+     
+    </p> 
+
+      
 
 
 
