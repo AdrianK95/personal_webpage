@@ -6,50 +6,145 @@
     <meta name="description" content="">
     <meta name="author" content="CSV for Adrian Kenneally ">
 
+    <!--------Stylesheet-------------->
+    <link rel="stylesheet" href="css/cv.css">
+    
+
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+
     <title>Adrian Kenneally</title>
 
   </head>
 
-  <h1><center>My Resume</center></h1>
-  <h2>Nisos</h2>
-  
-  <body>
-    <h3>Software Engineer | January 2021 - Present</h3>
-    <hr>
-    
-    <h4> <strong><u> Experience gained: </u> </strong> <br>
-      <br>
-    ETL of Static: Within this project the goal was to clean, normalize and move data from an old ec2 instance to a New Data platform. To complete this task we used AWK for the inital transformation and then Pyspark and AWS glue to move that to gold standard. This was then loaded into our data platform with a secondary copy kept in S3 
-    <br>
-    Implementing RESTful APIS: We are currently implementing various different APIs into an internal tool in order to allow analysts to expedite there work process. In this we use a python function to retrieve data from the API whenever the lambda is called. This data is then passed to our own api where it is transformed into a format suitable for the frontend<br>
-<br>
-   <u>Tech Stack Used: </u> 
-  <ol> Python </ol>
-  <ol> AWS (Lamdba, Glue, EC2)</ol>
-  <ol>Linux</ol>
-  <ol>AWK</ol>
-  <ol>Terraform</ol>
-    
+<body>
+<div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <div class="title text-center">
+          <h1>Adrian Kenneally</h1>
+          <h3>Software Developer</h3>
+          <h4><a href="https://adriankenneally.github.io/personal_webpage/">My Website</a></h4>
+          <hr />
+          <ul class="list-inline">
+            <li><i class="devicon-python-plain"></i></li>
+            <li><i class="devicon-javascript-plain colored"></i></li>
+            <li><i class="devicon-html5-plain colored"></i></li>
+            <li><i class="devicon-amazonwebservices-original colored"></i></li>
+            <li><i class="devicon-linux-plain"></i></li>
+          </ul>
+        </div>
+        
+        <!-- summary section -->
+        <div class="summary">
+          <h2 class="text-center">Summary</h2>
+          <p>A software developer with over 2 years of experience in designing and developing web applications. Enjoy opportunities to enhance my skills and provide my services to add value to the products of the organization. Highly motivated self learner with a passion for learning and keeping informed of the latest in technology.</p>
+          
+          <div class="row">
+            <div class="col-md-3 col-sm-3">
+              <p>Client Management</p>
+              <p>Data Engineering</p>
+              <p>Machine Learning</p>
+            </div>
+            <div class="col-md-3 col-sm-3">
+              <p>Development</p>
+              <p>Design</p>
+              <p>Linux Admin</p>
+            </div>
+            <div class="col-md-3 col-sm-3">
+              <p>Agile Development</p>
+              <p>Backend Development</p>
+              <p>API Integrations</p>
+            </div>
+            
+          </div>
+          
+        </div>
+        
+        
+        <!-- work experience section -->
+        <div class="work-experience">
+          <h2 class="text-center">Work Experience</h2>
+          <div class="row experience-title">
+            <div class="col-md-9">
+              <h3>Nisos</h3>
+              <h4>Software Engineer</h4>
+              <h5></h5>
+            </div>
+            <div class="col-md-3">
+              <h3>Jan 2022 - Present</h3>
+            </div>
+          </div>
+          <div class="row experience-summary">
+            <div class="col-md-12">
+              <p>Developed & implemented cloud-based architecture using Python, Django & AWS for Restful API integrations to streamline operations, increasing efficiency by 70%.</p>
+            </div>
+          </div>
+          
+          <!-- Corasent -->
+          <div class="row experience-title">
+            <div class="col-md-9">
+              <h3>PwC</h3>
+              <h4>Associate</h4>
+              <h5></h5>
+            </div>
+            <div class="col-md-3">
+              <h3>Aug 2021 - Jan 2022</h3>
+            </div>
+          </div>
+          <div class="row experience-summary">
+            <div class="col-md-12">
+              <p>Automated processes for a total of 15TB volumes of data from external vendors, reducing data processing time by up to 85%.
+              </p>
+               <p> Developed dynamic recommendation system in Python and Tensorflow, reducing search time & facilitating accurate HR candidate matchmaking.
+                </p>
 
-   <u>Other Tasks:</u> 
-    <ul>Spikes on new Technologies and APIS</ul>
-    <ul>Presentations on aws</ul>
-  
-  
-  </h4>
-  </body>
+                <p>Developed dynamic, real-time dashboards to facilitate data analysis for business partners, visualizing 3 years' worth of fluctuations & allowing efficient monitoring of changes.</p>
+             </p> 
+            </div>
+          </div>
+        </div>
 
-  <h2> PriceWaterHouseCoopers</h2>
-  <body>
-    <h1>Data & Analytics Associate</h1>
+        <!-- Education section -->
+        <div class="work-experience">
+            <h2 class="text-center">Education</h2>
+            <div class="row experience-title">
+              <div class="col-md-9">
+                <h3>University of Limerick</h3>
+                <h4>BSc(Hons) Physics & Chemistry</h4>
+                <h5></h5>
+              </div>
+              <div class="col-md-3">
+                <h3>Aug 2015 - Aug 2019</h3>
+              </div>
+            </div>
+            <div class="row experience-summary">
+              <div class="col-md-12">
+                </div>
+            </div>
+            
+            <!-- Corasent -->
+            <div class="row experience-title">
+              <div class="col-md-9">
+                <h3>Technological University of The Shannon</h3>
+                <h4>MSc Software Design with Artificial Intelligence</h4>
+                <h5></h5>
+              </div>
+              <div class="col-md-3">
+                <h3>Aug 2019 - Aug 2021</h3>
+              </div>
+            </div>
+            <div class="row experience-summary">
+              <div class="col-md-12">
+                
+              </div>
+            </div>
+          </div>
 
-    <h3> <strong> Experience gained </strong> <br>
-    <h4>Data Migration: <br>
-    Recommendation System: <br>
-  Analysis of Pension Data: <br></h4>
-    <u>Tech Stack Used:</u>
-    <ol>Python</ol> 
-    <ol></ol>Alteryx
-    <ol>AWS</ol>
-    <ol>Azure</ol>
-  </body>
+
+
+      </div>
+    </div>
+  </div>
+</body>
