@@ -35,6 +35,7 @@ body {
 .grid-item img {
   display: block;
   width: 100%;
+  border: white 1px;
 }
 
 

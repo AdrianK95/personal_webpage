@@ -5,87 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
+ <!-----Title-------->
+<title>Blogs</title>
 
-    <title>Blogs</title>
+ <!--------Stylesheet-------------->
+<link rel="stylesheet" href="blogscss/stylesheet.css">
 
-   
+<!--------fav-icon-------------->
+<link rel="stylesheet" href="blogscss/stylesheet.css">
 
-    <!-- Add custom CSS here -->
-    <link href="blogscss/blogsGeneric.css" rel="stylesheet">
-    <link href="../css/bootstrap.css" rel="stylesheet">
-     <link href="../css/stylish-portfolio.css" rel="stylesheet">
-     <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<!----poppins------>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+
 
   </head>
 
-<body>
+  <body>
+    <title>My Blog</title>
 
-   <!-- Side Menu -->
-   <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><i class="fa fa-bars"></i></a>
-   <div id="sidebar-wrapper">
-     <ul class="sidebar-nav">
-       <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-       <li class="sidebar-brand"><a href="http://startbootstrap.com"></a></li>
-       <li><a href="index.html">Home</a></li>
-       <li><a href="#about">About</a></li>
-       <li><a href="#services">Services</a></li>
-       <li><a href="#portfolio">Portfolio</a></li>
-       <li><a href="#contact">Contact</a></li>
-     </ul>
-   </div>
-   <!-- /Side Menu -->
+    <!---Blog Section-->
+    <section id="blog">
+        <!---heading-->
+        <div class="blog-heading"></div>
+        <span>My Recent Posts</span>
 
-  <!--header -->
-  <div id="top" class="top">
-      <h1>Blogs</h1>
-    </div>
-  </div>
 
-  <div id="title">
-    <h1>Current Articles </h1>
-  </div>
+        <!------Blog container----->
+        <div class="blog-container">
 
-  <div id="postList">
-    <ul><h3 style="margin-top:12px">
-      <a class="post-link" href="./2022/08/25/going_serverless.html">Going From Teaching to Software Engineering</a></h3>
-      <h3 passing=12px><a class="post-link" href="/blogs/2022/08/24/Graph.html">Going Serverless</a></h3>
-    </ul>
-  </div>
+            <!-------Box 1-->
+            <div class="blog-box"></div>
 
-  <!-- JavaScript -->
-  <script src="js/jquery-1.10.2.js"></script>
-  <script src="js/bootstrap.js"></script>
+            <!-----img-->
+            <div class="blog-img">
+                <img src="../img/computer.jpeg" alt="blog">
+            
+            <!-------text-->
+            <div class="blog-txt">
+                <span>20 Dec 2022</span>
+                <a href="2022/08/25/going_serverless.html" class="blog-title">Going Serverless</a>
+                <p> Should we follow the marketing hype train or just keep our own servers</p>
+                <a href="#">Read more</a>
 
-  <!-- Custom JavaScript for the Side Menu and Smooth Scrolling -->
-  <script>
-      $("#menu-close").click(function(e) {
-          e.preventDefault();
-          $("#sidebar-wrapper").toggleClass("active");
-      });
-  </script>
-  <script>
-      $("#menu-toggle").click(function(e) {
-          e.preventDefault();
-          $("#sidebar-wrapper").toggleClass("active");
-      });
-  </script>
-  <script>
-    $(function() {
-      $('a[href*=#]:not([href=#])').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
-          || location.hostname == this.hostname) {
+            </div>
 
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-          if (target.length) {
-            $('html,body').animate({
-              scrollTop: target.offset().top
-            }, 1000);
-            return false;
-          }
-        }
-      });
-    });
-  </script>
+            </div>
 
-</body>
+          
+        </div>
+    </section>
+
+  </body>
